@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Notable");
+:root {
+  --primary: teal;
+  --secondary: mediumpurple;
+  --black: black;
+  --white: white;
+}
+body {
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+#app {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--black);
+  padding: 2em 1em;
+  height: 100vh;
+  width: 30vw;
+  max-width: 450px;
+}
+main {
+  background-color: var(--primary);
+  padding: 2em 1em;
+  height: 100vh;
+  width: 70vw;
+  margin: 0;
+}
+.app-title {
+  font-family: "Notable", sans-serif;
+  color: var(--secondary);
+  letter-spacing: 2px;
+}
+
+.card {
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  background: var(--black);
+  max-width: 80vw;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateY(0px);
+}
+
+.card-title,
+.card-description {
+  color: var(--primary);
+  font-family: "Notable", sans-serif;
+  letter-spacing: 2px;
+}
+
+.players {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.players li {
+  margin: 10px 0;
+}
+
+.players li {
+  font-family: "Notable", sans-serif;
+  font-size: 2em;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.addNoteForm {
+  margin: 2em 0;
+  display: grid;
+}
+input[type="text"] {
+  font-family: "Montserrat", sans-serif;
+  padding: 1em;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: auto;
+  border-radius: 3px;
+  color: #fff;
+  margin: 0;
+}
+
+input[type="text"]::placeholder {
+  color: #dfdfdf;
+  font-weight: bold;
+}
+
+.addBtn {
+  margin: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: 2px solid limegreen;
+  padding: 1em;
+  color: white;
+  width: auto;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.24s ease-in-out;
+}
+
+.addBtn:hover {
+  background-color: limegreen;
+  color: var(--black);
+  transition: all 0.24s ease-in-out;
+}
